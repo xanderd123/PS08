@@ -1,3 +1,11 @@
+"""
+Problem Set 8 Complex Number Iterations
+NAME : {enter your name here}
+
+complete the code for the functions below
+
+
+"""
 import os
 
 def do_calculation(complex_num, complex_seed):
