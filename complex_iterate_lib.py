@@ -29,7 +29,7 @@ def do_iteration(complex_num, complex_seed):
     then do the calculation again with that new complex number and the same
     original seed.
     Keep doing this until EITHER
-    (a) the absolute value of the new complex number > 2
+    (a) the new complex number get more than 2 "units" away from the origin
     OR
     (b) you have iterated 255 times
 
