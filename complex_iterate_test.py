@@ -1,5 +1,5 @@
 import unittest
-from foo import *
+from complex_iterate_lib import *
 
 class TestCalculation(unittest.TestCase):
     """
