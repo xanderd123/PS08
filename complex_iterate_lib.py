@@ -1,13 +1,12 @@
 """
 Problem Set 8 Complex Number Iterations
-NAME : {enter your name here}
+NAME : {Xander Dressler}
 
 complete the code for the functions below
 
 
 """
 import os
-
 def do_calculation(complex_num, complex_seed):
     """
     Takes two inputs, complex_num which is a complex number and
@@ -17,8 +16,9 @@ def do_calculation(complex_num, complex_seed):
 
     Then return the new complex number
     """
-    return 0
-
+    result = (complex_num **2) + complex_seed
+    #print(result)
+    return result
 def do_iteration(complex_num, complex_seed):
     """
     Takes two inputs, a complex number and a seed which is also
@@ -35,4 +35,13 @@ def do_iteration(complex_num, complex_seed):
 
     When this has completed, return the number of iterations that executed
     """
-    return 0
+    x = complex_num
+    for i in range(255):
+        ans = do_calculation(x, complex_seed)
+    #    print(ans)
+        x = ans
+        if abs(x) > 2:
+            print("MAX Epicness")
+            break
+    print(i)
+    return i + 1
